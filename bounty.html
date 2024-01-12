@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Pathipaka - Cybersecurity Explorer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        section {
+            background-color: #333;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 1.8em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 20px 0;
+            background-color: #e44d26;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 1.2em;
+        }
+
+        .btn:hover {
+            background-color: #d63719;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+            clear: both; /* Add this property to ensure the footer clears both floated and non-floated elements */
+            font-size: 1.2em;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .security-logo {
+            max-width: 80px;
+            height: auto;
+            margin: 10px;
+            filter: brightness(0) invert(1);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-icon {
+            margin: 0 15px;
+            color: #e44d26;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #d63719;
+        }
+        .security-check {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .security-check input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1em;
+        }
+
+        .security-check button {
+            padding: 12px 24px;
+            background-color: #e44d26;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .security-check button:hover {
+            background-color: #d63719;
+        }
+    </style>
+    <script>
+        function checkSecurityCode() {
+            var enteredCode = document.getElementById("securityCode").value;
+            var correctCode = "1234"; // Change this to your desired security code
+
+            if (enteredCode === correctCode) {
+                document.getElementById("securityCheck").style.display = "none";
+            } else {
+                alert("Incorrect security code. Please try again.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="security-check" id="securityCheck">
+        <p>Enter the security code to access the content:</p>
+        <input type="text" id="securityCode" placeholder="Security Code">
+        <button onclick="checkSecurityCode()">Submit</button>
+    </div>
+    
+    <header>
+        <h1>Krishna Pathipaka</h1>
+        <p>Hyderabad, India</p>
+        <p>Email: krishkittu256@gmail.com | Phone: +971 509 840 197</p>
+    </header>
+
+    <section id="objective">
+        <h2>Embarking on a Cybersecurity Odyssey</h2>
+        <p>Motivated and detail-oriented cybersecurity enthusiast with a Bachelor of Technology in Computer Science, specializing in Computer Networks, Cryptography, Network Security, Web Technologies, and Object-Oriented Programming.</p>
+        <p>Seeking an entry-level position to leverage academic knowledge and certifications, including EC-Council Certified Ethical Hacker (CEH), Certified Cyber Security Technician (Expected by March 2024), TCS ion Young Professional Certificate, and PowerBi Workshop Certification by Skill Nation, to contribute to the security and resilience of digital systems.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="education">
+        <h2>The Academic Tapestry</h2>
+        <p>Bachelor of Technology in Computer Science<br>Jawaharlal Nehru Technological University, Hyderabad<br>Aug 2019 – Oct 2023</p>
+        <ul>
+            <li>Computer Networks</li>
+            <li>Cryptography</li>
+            <li>Network Security</li>
+            <li>Web Technologies</li>
+            <li>Object-Oriented Programming</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>The Certification Trail</h2>
+        <ul>
+            <li>EC-Council Certified Ethical Hacker (CEH) (Expected by March 2024)</li>
+            <li>Certified Cyber Security Technician (Expected by March 2024)</li>
+            <li>TCS ion Young Professional Certificate</li>
+            <li>PowerBi Workshop Certification by Skill Nation</li>
+        </ul>
+    </section>
+
+    <section id="work-experience">
+        <h2>The Remote Chronicles</h2>
+        <p>Tele Associate (Remote)<br>IndiaMART Intermesh<br>July 2022 – Aug 2023</p>
+        <ul>
+            <li>Approached sellers to verify their accounts, ensuring compliance with account security protocols.</li>
+            <li>Collaborated with the account security team to implement and uphold security standards.</li>
+            <li>Demonstrated effective communication skills in addressing seller inquiries related to account verification.</li>
+            <li>Worked remotely to support the account verification process without direct involvement in sales activities.</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>The Toolkit</h2>
+        <div class="technical-skills">
+            <p><strong>Technical Skills:</strong></p>
+            <ul>
+                <li>Operating Systems: Windows, Linux</li>
+                <li>Programming Languages: Python</li>
+                <li>Network Protocols: TCP/IP, UDP, DNS</li>
+                <li>Security Tools: Wireshark, Nmap</li>
+                <li>Security Frameworks: NIST, ISO 27001</li>
+                <li>Encryption and Hashing Algorithms</li>
+                <li>Web Technologies: HTML, CSS, JavaScript</li>
+                <li>Object-Oriented Programming Concepts</li>
+            </ul>
+        </div>
+        <div class="soft-skills">
+            <p><strong>Soft Skills:</strong></p>
+            <ul>
+                <li>Problem-solving</li>
+                <li>Attention to detail</li>
+                <li>Team collaboration</li>
+                <li>Effective communication</li>
+                <li>Time management</li>
+                <li>Adaptability</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Life Beyond the Screen</h2>
+        <p>Reading books and riding motorcycles - finding joy beyond the realm of codes and algorithms.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Crafting Digital Experiences</h2>
+        <p>Developed a personal portfolio website showcasing technical skills, projects, and achievements. Designed and implemented the website using HTML, CSS, and JavaScript to create an interactive and visually appealing platform.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <p>Excited to discuss cybersecurity, technology, or anything in between? Feel free to reach out!</p>
+        <a href="mailto:krishkittu256@gmail.com" class="btn">Send Email</a>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" class="social-icon" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/your-instagram-profile" class="social-icon" target="_blank">Instagram</a>
+            <a href="https://wa.me/your-whatsapp-number" class="social-icon" target="_blank">WhatsApp</a>
+        </div>
+        <p>&copy; 2024 Krishna Pathipaka. All rights reserved.</p>
+    </footer>
+
+    <div class="logo-container">
+        <img class="security-logo" src="security_logo1.png" alt="Security Logo 1">
+        <img class="security-logo" src="security_logo2.png" alt="Security Logo 2">
+        <img class="security-logo" src="security_logo3.png" alt="Security Logo 3">
+    </div>
+
+</body>
+
+</html>
